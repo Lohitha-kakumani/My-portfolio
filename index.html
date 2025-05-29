@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/525ccdb2eb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p class="typewriter">
+                    Web Developer<br>
+                    UI Designer<br>
+                    MERN Stack Enthusiast
+                </p>
+
+                <h1>Hi, I'm <span>K</span> Lohitha </h1>
+            </div>
+        </div>
+    </div>
+<!--   -----------  about section ----------  --> 
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/lohithapic.jpg" alt="my image">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Enthusiastic B.Tech student with 9.72 cgpa, adept in web development, UI/UX design, and programming, driven by innovation and excellence, seeking impactful roles in the tech industry.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>WEB DEVELOPEMT</span><br>Web app Development</li>
+                            <li><span>APP DEVELOPEMT</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>May,2025 - Present</span><br>Internship at Intel.</li>
+                            <li><span>Feb,2025 - Present</span><br>Internship at MurthiLab.</li>
+                            <li><span>Jan,2025 - Present</span><br>Student Coordinator at CGC.</li>
+                            <li><span>Feb,2024 - Apr,2024</span><br>Internship at 99YAARDS.</li>
+                            <li><span>Jun,2023 - Nov, 2023</span><br>Logistic Officer at CODEX</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>2026</span><br>CSE at GITAM University</li>
+                            <li><span>2022</span><br>Intermediate at Sri Chaitanya jr.College</li>
+                            <li><span>2020</span><br>High School at Sri Chaitanya Techno School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------- services ----------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Crafting visually appealing and user-friendly websites that engage visitors and enhance online presence.</p>
+                <a href="https://web.dev/learn">LearnMore</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                <h2>UI/UX design</h2>
+                <p>Designing interactive interfaces and experiences that balance aesthetics with functionality to delight users.</p>
+                <a href="https://www.pencilandpaper.io/articles/ux-design-documentation-guide">LearnMore</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Creating intuitive and seamless mobile app interfaces focused on usability and user experience.</p>
+                <a href="https://makeschool.org/mediabook/oa/tracks/build-ios-apps/app-design-documents/design-documents/">LearnMore</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------- Portfolio ---------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="work1">
+                <div class="layer">
+                    <h3>E-COM WEBSITE</h3>
+                    <p>Built a responsive e-commerce platform with secure user authentication and seamless shopping experience.</p>
+                    <a href="https://github.com/Lohitha-kakumani/E-COMMERCE"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="work2">
+                <div class="layer">
+                    <h3>POSE CONTROL SUBWAYSURF</h3>
+                    <p>Implemented human pose estimation for gesture-based control in subway surveillance systems.</p>
+                    <a href="https://github.com/Lohitha-kakumani/posecontrol_subway"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div> 
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="work3">
+                <div class="layer">
+                    <h3>ADAS</h3>
+                    <p>Developed an Advanced Driver Assistance System using real-time object detection to enhance vehicle safety.</p>
+                    <a href="https://github.com/Lohitha-kakumani/ADAS"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+    
+<!-- ------------- Contact ---------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="contact-section">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-sharp fa-solid fa-paper-plane"></i>kakumanilohitha2005@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 7780141061</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/lohitha222/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/lohitha-kakumani-29242525b/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Lohitha-kakumani"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="images/resume2025.pdf" download class="btn btn2">Download CV</a>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = '0';
+    }
+    function closemenu(){
+        sidemenu.style.right = '-200px';
+    }
+</script>
+</body>
+</html>
